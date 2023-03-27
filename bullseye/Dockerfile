@@ -81,6 +81,7 @@ FROM bullseye-metamod AS bullseye-sourcemod
 ENV SOURCEMOD_VERSION 1.11
 
 RUN ls
+RUN echo $PWD
 # RUN cd "/home/Steam/csgo-dedicated/csgo/" \
 #    wget https://github.com/splewis/get5/releases/download/v0.13.0/get5-v0.13.0.tar.gz \
 #    tar -xf get5-v0.13.0.tar.gz \
