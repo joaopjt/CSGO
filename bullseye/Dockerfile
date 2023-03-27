@@ -82,8 +82,8 @@ ENV SOURCEMOD_VERSION 1.11
 
 RUN ls
 RUN echo $PWD
-RUN cd csgo-dedicated/
-RUN ls
+RUN cd csgo-dedicated/ \
+    ls
 
 #RUN cd "${STEAMAPPDIR}/csgo/" \
 #    wget https://github.com/splewis/get5/releases/download/v0.13.0/get5-v0.13.0.tar.gz \
