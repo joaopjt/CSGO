@@ -71,6 +71,11 @@ CMD ["bash", "entry.sh"]
 EXPOSE 27015/tcp \
 	27015/udp \
 	27020/udp
+	
+RUN cd ${STEAMAPPDIR}/csgo/ \
+    wget https://github.com/splewis/get5/releases/download/v0.13.0/get5-v0.13.0.tar.gz \
+    tar -xf get5-v0.13.0.tar.gz \
+    rm get5-v0.13.0.tar.gz
 
 FROM bullseye-base AS bullseye-metamod
 
